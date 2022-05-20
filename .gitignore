@@ -1,6 +1,8 @@
 # Data
-data/
+data/input/
 data/output/geo/
+
+data/
 scrapy/
 docs/
 
