@@ -12,7 +12,4 @@ Os dados são disponibilizados pelo órgão outorgante estadual, por meio do [*s
 
 ### *TODO*:
 
-- Ok Ajustar Separar o que é MC 45 (Zona 23) e MC 51 (Zona 22) em tabelas diferentes;
-- Ok Criar os *shapefiles* necessários nas respectivas projeções;
-- Ok Reprojetar para datum geográfico WGS.
-- Ok Merge ambos.
+- Criar mapa
