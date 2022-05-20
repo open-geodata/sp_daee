@@ -1,14 +1,17 @@
-data/old/
-data/brutos/
-adds/
+# Data
+data/
+data/output/geo/
+scrapy/
+docs/
 
+# IDE
+.vscode/
+.idea/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
-
-
 
 # C extensions
 *.so
