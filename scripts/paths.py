@@ -1,23 +1,53 @@
-import os
+"""
+Pastas
+out.22
+"""
 
 
-data_path = os.path.join('..', 'data')
-os.makedirs(data_path, exist_ok=True)
+from pathlib import Path
 
-input_path = os.path.join(data_path, 'input')
-os.makedirs(input_path, exist_ok=True)
 
-bruto_path = os.path.join(input_path, 'brutos')
-os.makedirs(bruto_path, exist_ok=True)
+# Project Path
+project_path = Path(__file__).parents[1]
 
-output_path = os.path.join(data_path, 'output')
-os.makedirs(output_path, exist_ok=True)
+scrapy_path = project_path / "scrapy"
+scrapy_path.mkdir(exist_ok=True)
 
-output_path_geo = os.path.join(output_path, 'geo')
-os.makedirs(output_path_geo, exist_ok=True)
+logs_path = scrapy_path / "logs"
+logs_path.mkdir(exist_ok=True)
 
-output_path_tab = os.path.join(output_path, 'tab')
-os.makedirs(output_path_tab, exist_ok=True)
+adds_path = scrapy_path / "adds"
+adds_path.mkdir(exist_ok=True)
 
-output_path_map = os.path.join(output_path, 'map')
-os.makedirs(output_path_map, exist_ok=True)
+
+# Package Path
+package_path = project_path / "outorgas"
+package_path.mkdir(exist_ok=True)
+
+data_path = package_path / "data"
+data_path.mkdir(exist_ok=True)
+
+input_path = data_path / "input"
+input_path.mkdir(exist_ok=True)
+
+input_path_brutos = input_path / "brutos"
+input_path_brutos.mkdir(exist_ok=True)
+
+output_path = data_path / "output"
+output_path.mkdir(exist_ok=True)
+
+output_path_geo = output_path / "geo"
+output_path_geo.mkdir(exist_ok=True)
+
+output_path_gpkg = output_path / "gpkg"
+output_path_gpkg.mkdir(exist_ok=True)
+
+output_path_tab = output_path / "tab"
+output_path_tab.mkdir(exist_ok=True)
+
+output_path_map = output_path / "map"
+output_path_map.mkdir(exist_ok=True)
+
+
+if __name__ == "__main__":
+    print(project_path)
